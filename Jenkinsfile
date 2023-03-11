@@ -9,7 +9,7 @@ pipeline {
 
     stage('npm unit tests') {
       steps {
-        sh 'cd /home/sibonelo/Documents/blockchain_tutorial/Ethereum-solidity-course && npm i && npm run test:unit'
+        sh 'cd /var/jenkins_home/workspace/Ethereum-solidity-course_dev && npm i && npm run test:unit'
       }
     }
 
