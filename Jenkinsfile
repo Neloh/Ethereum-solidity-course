@@ -7,5 +7,11 @@ pipeline {
       }
     }
 
+    stage('npm unit tests') {
+      steps {
+        sh 'cd /home/sibonelo/Documents/blockchain_tutorial/Ethereum-solidity-course && npm i && npm run test:unit'
+      }
+    }
+
   }
 }
